@@ -1,78 +1,176 @@
-*{
-    padding: 0%;
-    margin: 0%;
-}
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-.botao{
-    background-color:#EB662B;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    border-radius: 20px;
-    width: 100px;
-}
-li a{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
+@font-face {
+    font-family:inter;
+    src: url("./assents/font/Inter-VariableFont_opsz\,wght.ttf");
+  }
+  
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: MontSerrat: /* Nome da font*/ ;
+  }
+  
+  *{
+      padding: 0%;
+      margin: 0%;
+  }
+  
+  body{
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .botao{
+      background-color:#EB662B;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      border-radius: 20px;
+      width: 120px;
+      border: none;
+  }
+  li a{
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      padding: 50px;
+  }
+  ul{
+      display: flex;
+      flex-direction: row;
+  }
+  li{
+      list-style: none;
+  }
+  nav{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+  }
+  input[type="search"] {
+      flex-grow: 1;
+      max-width: 400px;
+      margin: 25px;
+      padding: 8px 12px;
+      
+      font-size: 14px;
+      outline: none;
+  }
+  header{
+      display: flex;
+      align-items:center;
+      justify-content:left;
+      padding: 10px 20px;
+  }
+  .home{
+      display: flex;
+      align-items: center;
+  }
+  .banner{
+      background-image: url(./assents/image.png);
+  width: 1800px;
+  height: 700px;
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;
+  display: block;
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+  .banner-texto{
+      font-family: Arial, Helvetica, sans-serif;
+      color: #ffffff;
+      position: absolute;
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%);
+      color: white; 
+   }
+   .texto{
+      font-size: 95px;
+   }
+  
+  p{
+    font-family: Montserrat;
+  }
+  
+  div.form-busca{
+    background: #ffffff;
+    color: #333;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    max-width: 900px;
+  }
+  
+  .campo{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+    padding: 0 10px;
+  }
+  
+  .icone{
+    width: 50px;
+    height: 50px;
+    background: #f0f0f0;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+  
+  }
+  
+  .titulo{
+    display: flex;
+    margin: 50px;
     padding: 50px;
-}
-ul{
+  }
+  
+  .card {
+      width: 250px;
+      padding: 20px;
+  
+  
+  }
+  
+  .card img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+  }
+  
+  .card h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+  }
+  
+  .card p {
+      color: #555;
+  }
+  .caixa-why{
     display: flex;
     flex-direction: row;
-}
-li{
-    list-style: none;
-}
-nav{
+    margin: 150px;
+  }
+  
+  .texto-paragrafo{
+    margin: 115px;
+    color: darkslateblue;
+  }
+  .estrutura02{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-input[type="search"] {
-    flex-grow: 1;
-    max-width: 400px;
-    margin: 25px;
-    padding: 8px 12px;
-    border: 2px solid #6a696b;
-    border-radius: 2px;
-    font-size: 14px;
-    outline: none;
-}
-header{
+    flex-direction: column;
+    padding: 70px;
+  }
+  .Trending-destinations{
     display: flex;
-    align-items:center;
-    justify-content:left;
-    padding: 10px 20px;
-}
-.home{
+    padding:10px;
+
+  }
+.imagens{
     display: flex;
     align-items: center;
+    gap: 30px;
+    padding: 30px;
 }
-.banner{
-    background-image: url('./assents/image.png');
-width: 1800px;
-height: 700px;
-margin-top: 50px;
-justify-content: center;
-display: flex;
-display: block;
-  margin-left: auto; 
-  margin-right: auto; 
-}
-.banner-texto{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    color: white; 
- }
- .texto{
-    font-size: 95px;
- }
